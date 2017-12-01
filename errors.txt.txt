@@ -1,0 +1,15 @@
+Errors found in circle files
+
+Circle.java
+    -In scale (line 33) factor should be multiplied by the radius in order to scale the circle
+                    Changed from "radius = radius + factor;" to "radius = radius * factor;"
+
+    -In moveBy (Line 46) the yOffset needs to be added to y to get a properly working function to move the circle
+                    Changed from "center.y = center.y + xOffset" to "center.y = center.y + yOffset"
+    
+Circle1.java
+    -Changed intersect method to properly determine whether or not the circles intersect
+
+Circle2.java
+    -Changed order of variables in line 8
+    -Changed intersect method using principles of the Pythagoreon Thearom
