@@ -1,0 +1,7 @@
+Igloo Score 1:
+    -Fixed line 39 so that the correct score is being used 
+
+Igloo Score 2:
+    -Fixed line 44 so that the lowest score is not being kept
+    -Fixed line 49 and 50 so that if all scores are equal the scores are set to the correct value
+    -Fixed line 59 to get rid of testing for null args and instead just checks to make sure there are exactly 3 arguments
