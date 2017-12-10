@@ -1,0 +1,18 @@
+<project name="P2" default="compile" basedir=".">
+	<target name="compile">
+		<javac srcdir="." destdir="." fork="true" includeantruntime="false"/>
+	</target>
+
+    <target name="jar" depends="compile">
+         <delete file="WebServer.jar"></delete>
+         <jar destfile="WebServer.jar" basedir=".">
+         <manifest>
+	          <attribute name="Main-Class" value="WebServer"/>
+         </manifest>
+       </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="WebServer.jar" fork="true"/>
+</target>
+</project>
